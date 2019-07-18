@@ -40,5 +40,17 @@ namespace Snake
             _head.Move(1, direction);
             return _head;
         }
+
+        internal void turn(ConsoleKeyInfo key)
+        {
+            if (key.Key == ConsoleKey.LeftArrow)
+                direction = Direction.LEFT;
+            else if (key.Key == ConsoleKey.RightArrow)
+                direction = Direction.RIGHT;
+            else if (key.Key == ConsoleKey.UpArrow)
+                direction = Direction.UP;
+            else if (key.Key == ConsoleKey.DownArrow)
+                direction = Direction.DOWN;
+        }
     }
 }
