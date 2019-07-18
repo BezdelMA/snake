@@ -10,17 +10,18 @@ namespace Snake
     {
         static void Main(string[] args)
         {
-            HorizontalLine HLineUp = new HorizontalLine(1, 100, 0, '_');
-            HLineUp.HDraw();
+            Console.SetWindowSize(105, 30);
+            HorizontalLine HLineUp = new HorizontalLine(1, 100, 0, '*');
+            HLineUp.Drow();
 
-            VerticalLine VLineLeft = new VerticalLine(1, 1, 28, '|');
-            VLineLeft.VDraw();
+            VerticalLine VLineLeft = new VerticalLine(1, 1, 28, '*');
+            VLineLeft.Drow();
 
-            HorizontalLine HLineDown = new HorizontalLine(2, 100, 28, '_');
-            HLineDown.HDraw();
+            HorizontalLine HLineDown = new HorizontalLine(2, 100, 28, '*');
+            HLineDown.Drow();
 
-            VerticalLine VLineRight = new VerticalLine(100, 1, 28, '|');
-            VLineRight.VDraw();
+            VerticalLine VLineRight = new VerticalLine(100, 1, 28, '*');
+            VLineRight.Drow();
 
             Console.ReadLine();
         }
