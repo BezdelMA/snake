@@ -41,6 +41,12 @@ namespace Snake
                 y += p;
         }
 
+        internal void Clear()
+        {
+            sym = ' ';
+            Draw();
+        }
+
         public void Draw()
         {
             Console.SetCursorPosition(x, y);
